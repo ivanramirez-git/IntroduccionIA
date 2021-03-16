@@ -1,5 +1,5 @@
 # IntroduccionIA
-# Implementaciones en Prolog
+## Implementaciones en Prolog
 
 Enlaces de referencia
   1. A Star Presentación: https://es.slideshare.net/Tutor4uDev/bsqueda-a
