@@ -25,9 +25,13 @@ go(state(robot(h1),en(C1,H1),en(C2,H2),pinza(C2)), state(robot(h2),en(C1,H1),en(
 go(state(robot(h2),en(C1,H1),en(C2,H2),pinza(C1)), state(robot(h1),en(C1,H1),en(C2,H2),pinza(C1)), 'Pasar').
 go(state(robot(h2),en(C1,H1),en(C2,H2),pinza(C2)), state(robot(h1),en(C1,H1),en(C2,H2),pinza(C2)), 'Pasar').
 
+go(state(robot(h1),en(C1,H1),en(C2,H2),pinza(0)), state(robot(h2),en(C1,H1),en(C2,H2),pinza(0)), 'Volver').
+go(state(robot(h1),en(C1,H1),en(C2,H2),pinza(0)), state(robot(h2),en(C1,H1),en(C2,H2),pinza(0)), 'Volver').
+go(state(robot(h2),en(C1,H1),en(C2,H2),pinza(0)), state(robot(h1),en(C1,H1),en(C2,H2),pinza(0)), 'Volver').
+go(state(robot(h2),en(C1,H1),en(C2,H2),pinza(0)), state(robot(h1),en(C1,H1),en(C2,H2),pinza(0)), 'Volver').
 
 
-%% 
+ 
 %go( state(0, L2) , state(3, L2) , 'fill pitcher1' ).
 %go( state(L1, 0) , state(L1, 4) , 'fill pitcher2' ).
 %go( state(L1, L2), state(0, L2) , 'empty pitcher1') :- L1 > 0.
