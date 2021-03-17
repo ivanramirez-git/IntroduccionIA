@@ -25,3 +25,4 @@ go(state(robot(h2),en(C1,h2),en(C2,H2),pinza(C1)), state(robot(h1),en(C1,h1),en(
 go(state(robot(h2),en(C1,H1),en(C2,h2),pinza(C2)), state(robot(h1),en(C1,H1),en(C2,h1),pinza(C2)), 'Pasar de h2 a h1').
 
 go(state(robot(h1),en(C1,H1),en(C2,H2),pinza(0)), state(robot(h2),en(C1,H1),en(C2,H2),pinza(0)), 'Pasar de h1 a h2 sin Caja').
+go(state(robot(h2),en(C1,H1),en(C2,H2),pinza(0)), state(robot(h1),en(C1,H1),en(C2,H2),pinza(0)), 'Pasar de h2 a h1 sin Caja').
