@@ -5,7 +5,7 @@ Un robot que debe trasladar cajas de colores, entre dos habitaciones (H1 y H2), 
 El robot posee una pinza que puede coger solo una caja a la vez.
 Se debe establecer un plan de acción (coger, pasar, soltar), que permita alcanzar una situación final deseada. 
 
-###Comprender elementos representativos del problema → Variables significativas y sus posibles valores.
+### Comprender elementos representativos del problema → Variables significativas y sus posibles valores.
 
 Variables significativas   .        Posibles Valores
 1. caja(C)    C es una caja
@@ -22,7 +22,7 @@ Variables significativas   .        Posibles Valores
 
 7. plib()    la pinza está libre
 
-###Identificar componentes del estado → Representarlo mediante una “TUPLA”.
+### Identificar componentes del estado → Representarlo mediante una “TUPLA”.
 
 estado(robot(H),en(C,H),en(C,H))
 
