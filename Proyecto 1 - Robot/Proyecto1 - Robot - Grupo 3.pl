@@ -1,6 +1,8 @@
 % solve(state(0, 0), state(_, 2), Solution).
-% solve(estado(robot(h2),en(a,h2),en(v,h2),pinza(0)), estado(robot(h1),en(a,h1),en(v,h2)),pinza(0), Solucion).
-% intercambio(estado(robot(h2),en(a,h2),en(v,h2),pinza(0)), estado(robot(h2),en(a,h2),en(v,h2)),pinza(a), Solucion).
+
+% solve(state(robot(h2),en(a,h2),en(v,h2),pinza(0)), state(robot(h1),en(a,h1),en(v,h2),pinza(0)), Solution).
+
+% go(state(robot(H),en(C1,H1),en(C2,H2),pinza(0)), state(robot(H),en(C1,H1),en(C2,H2),pinza(C2)), Solucion).
 
 solve(InitialState, FinalState, Actions) :- plan(InitialState, FinalState, Actions, [InitialState]).
 
@@ -12,16 +14,16 @@ plan(State1, State, [Action|R], States) :-  go(State1, State2, Action),
 %%Implementando intercambio y estados
 
 
-intercambio(estado(robot(H),en(C1,H1),en(C2,H2),pinza(0)), estado(robot(H),en(C1,H1),en(C2,H2)),pinza(C2),'Coger').
-intercambio(estado(robot(H),en(C1,H1),en(C2,H2),pinza(0)), estado(robot(H),en(C1,H1),en(C2,H2)),pinza(C1),'Coger').
+go(state(robot(H),en(C1,H1),en(C2,H2),pinza(0)), state(robot(H),en(C1,H1),en(C2,H2),pinza(C2)), 'Coger').
+go(state(robot(H),en(C1,H1),en(C2,H2),pinza(0)), state(robot(H),en(C1,H1),en(C2,H2),pinza(C1)), 'Coger').
 
-intercambio(estado(robot(H),en(C1,H1),en(C2,H2),pinza(C1)), estado(robot(H),en(C1,H1),en(C2,H2)),pinza(0),'Soltar').
-intercambio(estado(robot(H),en(C1,H1),en(C2,H2),pinza(C2)), estado(robot(H),en(C1,H1),en(C2,H2)),pinza(0),'Soltar').
+go(state(robot(H),en(C1,H1),en(C2,H2),pinza(C1)), state(robot(H),en(C1,H1),en(C2,H2),pinza(0)), 'Soltar').
+go(state(robot(H),en(C1,H1),en(C2,H2),pinza(C2)), state(robot(H),en(C1,H1),en(C2,H2),pinza(0)), 'Soltar').
 
-intercambio(estado(robot(h1),en(C1,H1),en(C2,H2),pinza(C1)), estado(robot(h2),en(C1,H1),en(C2,H2)),pinza(C1),'Pasar').
-intercambio(estado(robot(h1),en(C1,H1),en(C2,H2),pinza(C2)), estado(robot(h2),en(C1,H1),en(C2,H2)),pinza(C2),'Pasar').
-intercambio(estado(robot(h2),en(C1,H1),en(C2,H2),pinza(C1)), estado(robot(h1),en(C1,H1),en(C2,H2)),pinza(C1),'Pasar').
-intercambio(estado(robot(h2),en(C1,H1),en(C2,H2),pinza(C2)), estado(robot(h1),en(C1,H1),en(C2,H2)),pinza(C2),'Pasar').
+go(state(robot(h1),en(C1,H1),en(C2,H2),pinza(C1)), state(robot(h2),en(C1,H1),en(C2,H2),pinza(C1)), 'Pasar').
+go(state(robot(h1),en(C1,H1),en(C2,H2),pinza(C2)), state(robot(h2),en(C1,H1),en(C2,H2),pinza(C2)), 'Pasar').
+go(state(robot(h2),en(C1,H1),en(C2,H2),pinza(C1)), state(robot(h1),en(C1,H1),en(C2,H2),pinza(C1)), 'Pasar').
+go(state(robot(h2),en(C1,H1),en(C2,H2),pinza(C2)), state(robot(h1),en(C1,H1),en(C2,H2),pinza(C2)), 'Pasar').
 
 
 
