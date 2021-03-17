@@ -8,19 +8,19 @@ Se debe establecer un plan de acción (coger, pasar, soltar), que permita alcanz
 ### Comprender elementos representativos del problema → Variables significativas y sus posibles valores.
 
 Variables significativas   .        Posibles Valores
-1. caja(C)    C es una caja
+1. caja(C)  →  C es una caja
 
-2. hab(H)    H es una habitación
+2. hab(H)  →  H es una habitación
 
-3. en(C,H)    la caja C se encuentra apoyada en el piso de la habitación H
+3. en(C,H)  →  la caja C se encuentra apoyada en el piso de la habitación H
 
-4. robot(H)    el robot se encuentra en la habitación H
+4. robot(H)  →  el robot se encuentra en la habitación H
 
-5. pinza(C)    la pinza tiene agarrada la caja C
+5. pinza(C)  →  la pinza tiene agarrada la caja C
 
-6. puerta(Ha,Hb)    existe una puerta entre las habitaciones Ha y Hb
+6. puerta(Ha,Hb)  →  existe una puerta entre las habitaciones Ha y Hb
 
-7. plib()    la pinza está libre
+7. plib()  →  la pinza está libre
 
 ### Identificar componentes del estado → Representarlo mediante una “TUPLA”.
 
