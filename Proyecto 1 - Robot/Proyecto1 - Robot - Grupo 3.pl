@@ -1,7 +1,4 @@
-% solve(state(0, 0), state(_, 2), Solution).
-
 % solve(state(robot(h2),en(a,h2),en(v,h2),pinza(0)), state(robot(h1),en(a,h1),en(v,h2),pinza(0)), Solution).
-
 % go(state(robot(H),en(C1,H1),en(C2,H2),pinza(0)), state(robot(H),en(C1,H1),en(C2,H2),pinza(C2)), Solucion).
 
 solve(InitialState, FinalState, Actions) :- plan(InitialState, FinalState, Actions, [InitialState]).
