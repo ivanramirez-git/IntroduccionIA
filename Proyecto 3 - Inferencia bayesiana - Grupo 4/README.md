@@ -21,3 +21,5 @@ Adjuntar un archivo ZIP que incluya:
 - pantallazos que demuestren el buen funcionamiento del programa con los ejemplos de la sustentación.
 
 El nombre del archivo debe ser "IIA-2021-Py3 - Grupo N", donde N es el número del grupo. 
+
+## Conclusiones

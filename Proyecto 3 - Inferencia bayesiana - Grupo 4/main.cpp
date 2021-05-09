@@ -4,10 +4,6 @@
 using namespace std;
 
 int main(){
-
-	cout<<"Hello word!!"<<endl;
-	
-	
-
+  cout<<"Ivan El Prow"<<endl;
 	return 0;
 }
